@@ -1,0 +1,151 @@
+
+section#brands {
+    padding: 5em 0;
+}
+
+.all-brands {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 1em;
+    gap: 2em; 
+}
+
+.brand-content h1 {
+    font-size: 35px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.brand-content h1:after {
+    position: absolute;
+    bottom: -90%;
+    left: 0;
+    width: 21%;
+    height: 2px;
+    background: var(--blue);
+    content: '';
+}
+
+.all-brands-details {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 4em 1fr;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 4em;
+}
+
+.all-brands-details .single-brand:last-child {
+    margin-top: -2em;
+}
+
+.single-brand h3 {
+    font-size: 20px;
+}
+
+.single-brand p {
+    line-height: 24px;
+}
+
+
+
+/* Tablet View (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .all-brands {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; 
+        -webkit-box-align: center; 
+            -ms-flex-align: center; 
+                align-items: center;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+
+    .all-brands-details {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr; 
+        gap: 2em; 
+    }
+
+    .brand-content h1 {
+        font-size: 30px;
+    }
+
+    .brand-content h1:after {
+        width: 30%;
+    }
+
+    .single-brand h3 {
+        font-size: 18px;
+    }
+
+    .single-brand p {
+        line-height: 22px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Mobile View (max-width: 768px) */
+@media (max-width: 768px) {
+    .all-brands {
+        padding: 1em;
+    }
+
+    .brand-content h1 {
+        font-size: 24px;
+    }
+
+    .brand-content h1:after {
+        width: 40%;
+    }
+
+    .brand-image img {
+        width: 100%; 
+        max-width: 300px; 
+    }
+
+    .all-brands-details {
+        gap: 1.5em; 
+    }
+
+    .single-brand h3 {
+        font-size: 16px;
+    }
+
+    .single-brand p {
+        font-size: 0.85rem;
+        line-height: 20px;
+    }
+}
+
+/* Small Mobile View (max-width: 480px) */
+@media (max-width: 480px) {
+    section#brands {
+        padding: 3em 0; 
+    }
+
+    .brand-content h1 {
+        font-size: 20px;
+    }
+
+    .brand-content h1:after {
+        width: 50%; 
+    }
+
+    .single-brand h3 {
+        font-size: 14px;
+    }
+
+    .single-brand p {
+        font-size: 0.8rem;
+        line-height: 18px;
+    }
+}

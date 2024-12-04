@@ -1,0 +1,89 @@
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --blue: #007dff;
+  --color-1: #0f0f0f;
+  --color-2: #020e28;
+  --color-3: #E0E0E0;
+  --color-4: #E1E1E1;
+  --color-5: #FCFEFF;
+  --color-yellow: #fdbd00;
+  --blue-bright: #00a5e4;
+  --blue-dark: #004377;
+  --blue-color-2: #027bfe;
+  --blue-color-3: #00a5e3;
+  --gradient: linear-gradient(
+    90deg,
+    rgba(0, 125, 255, 1) 0%,
+    rgba(253, 190, 0, 1) 100%
+  );
+  --transition: 0.4s;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--font-color);
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: bold;
+}
+
+a {
+  display: inline-block;
+  text-decoration: inherit;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.btn {
+  cursor: pointer;
+  background: var(--gradient);
+  color: var(--white);
+  border: none;
+  padding: 10px 15px;
+  font-weight: bold;
+  border-radius: 50px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.custom-flex {  
+  display: -webkit-box;  
+  display: -ms-flexbox;  
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.text-highlight {
+  color: var(--color-yellow);
+}
+
+.text-highlight-primary {
+  color: var(--blue);
+}
+
+.text-highlight-blue-dark {
+  color: var(--blue-dark);
+}

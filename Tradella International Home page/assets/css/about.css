@@ -1,0 +1,113 @@
+.about-content-container {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 2em;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+section#about {
+    padding: 6.25em 0;
+}
+
+.about-image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.about-details h1 {
+    position: relative;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.about-details h1:after {
+    position: absolute;
+    bottom: -70%;
+    left: 0;
+    width: 21%;
+    height: 2px;
+    background: var(--blue);
+    content: '';
+}
+
+/* Responsive Adjustments */
+
+/* Tablet View (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .about-content-container {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr; 
+        gap: 2em; 
+    }
+
+    section#about {
+        padding: 4em 1em;
+    }
+
+    .about-details h1 {
+        font-size: 30px; 
+    }
+
+    .about-details p {
+        font-size: 0.95rem;
+        padding: 0 1em; 
+    }
+}
+
+/* Mobile View (max-width: 768px) */
+@media (max-width: 768px) {
+    .about-content-container {
+        gap: 1.5em; 
+    }
+
+    section#about {
+        padding: 3em 1em; 
+    }
+
+    .about-details h1 {
+        font-size: 24px;
+    }
+
+    .about-details p {
+        font-size: 0.9rem;
+    }
+
+    .about-image img {
+        max-width: 90%; 
+    }
+}
+
+/* Small Mobile View (max-width: 480px) */
+@media (max-width: 480px) {
+    section#about {
+        padding: 2em 0.5em; 
+    }
+
+    .about-details h1 {
+        font-size: 20px;
+    }
+
+    .about-details p {
+        font-size: 0.85rem; 
+        padding: 0 0.5em; 
+    }
+
+    .about-image img {
+        max-width: 100%; 
+    }
+}

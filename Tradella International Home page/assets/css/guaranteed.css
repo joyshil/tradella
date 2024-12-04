@@ -1,0 +1,125 @@
+
+section#guaranteed {
+    background-image: url('../image/service-banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+section#guaranteed:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #020e28d9;
+    content: '';
+    z-index: -1;
+}
+
+.guaranteed-image {
+    z-index: 99;
+}
+.content-container {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 2em;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.guaranteed-image img {
+    width: 100%;
+}
+
+.guaranteed-details {
+    position: absolute;
+    top: 10%;
+    right: 0;
+    background: #141D32;
+    width: 60%;
+    padding: 3.5em;
+    z-index: 999;
+}
+
+.guaranteed-content {
+    padding: 6em 0;
+}
+
+.guaranteed-details h1 {
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+.guaranteed-details p {
+    line-height: 24px;
+    color: var(--white);
+}
+
+.guaranteed-details button {
+    background: var(--blue);
+    text-transform: uppercase;
+}
+
+@media (max-width: 1024px) {
+    .guaranteed-content {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        text-align: center;
+    }
+
+    .content-container {
+        gap: 1.5em;
+    }
+    .guaranteed-details{
+        width: 100%;
+    }
+    .guaranteed-details h1 {
+        font-size: 1.75rem;
+    }
+
+    .guaranteed-details p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .guaranteed-details {
+        padding: 3em 0;
+    }
+    .guaranteed-details h1 {
+        font-size: 1.5rem;
+    }
+
+    .guaranteed-details p {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .guaranteed .container {
+        padding: 0 0.5em;
+    }
+
+    .guaranteed-details {
+        padding: 2em 0;
+    }
+
+    .guaranteed-details h1 {
+        font-size: 1.25rem;
+    }
+}
